@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utilities  */
+
+.task-completed {
+  text-decoration: line-through;
+  color: #b3acac;
+}
+
+/* Base Styling  */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* Main layout styling  */
+
+main {
+  width: 58rem;
+  max-width: 90%;
+  padding: 3rem 9rem;
+  border-radius: 1rem;
+  border: 2px solid;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.taskInput-container {
+  border: 2px solid;
+  border-radius: 0.7rem;
+  padding: 2px;
+  margin-block: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 88%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 1.6rem;
+}
+
+.add-taskBtn {
+  width: 4rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.7rem;
+}
+
+/* Tasks List  */
+
+.tasks-list {
+  height: 20rem;
+  overflow-y: scroll;
+}
+
+.tasks-list > .task {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0.5rem 0;
+  gap: 10px;
+  border-bottom: 2px solid rgb(204, 196, 196);
+}
+
+.tasks-list > .task > p {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  height: 0;
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.tasks-list > .task > .checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.tasks-list > .task > .delete-taskBtn {
+  background-color: transparent;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 3rem 2rem;
+  }
+}
