@@ -49,7 +49,7 @@ To install this project, follow these steps:
 ## Project and Live
 
 Project:- https://roadmap.sh/projects/task-tracker-js
-Live:- https://github.com/Anshmittal86/Task-Tracker
+Live:- https://anshmittal86.github.io/Task-Tracker/
 
 ---
 
